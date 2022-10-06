@@ -1,4 +1,5 @@
-{
+{ 
+  "homepage": "https://github.com/onifade-joshua/dev_joshua_portfolio-11",
   "name": "dev_onifade_portfolio",
   "version": "1.0.0",
   "main": "index.js",
@@ -6,10 +7,13 @@
   "author": "onifade-joshua",
   "scripts": {
     "start": "parcel ./src/index.html",
+    "predeploy": "npm run dist",
+    "deploy": "gh-pages -d dist",
     "build": "parcel build ./src/index.js"
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
+    "gh-pages": "^4.0.0",
     "localtunnel": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
